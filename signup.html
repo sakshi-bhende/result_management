@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Signup</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="signup.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!---------- Navbar ---------->
+        <nav class="navbar navbar-inverse navbar-fixed-top navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle tgl" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand logo">Education4ol</a>
+                </div>
+                <div class="collapse navbar-collapse" id='myNavbar'>
+                    <ul class="nav navbar-nav navbar-right menue">
+                        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!---------- Signup ---------->
+        <div class="container home">
+            <form class="form-group frm" action="signup.php"  method="post"> 
+                <div class="row signup">
+                    <center>
+                        <h1>SIGNUP</h1>
+                    </center>
+                    <div class="col-xs-6 account">
+                        <label for="name">Full Name</label>
+                        <input type="text" class="form-control" name="FullName" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="col-xs-6 account">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" name="email" placeholder="Enter your email address" required>
+                    </div>
+                    
+                   
+                  
+                  
+                    <div class="col-xs-6 account">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="col-xs-6 account">
+                        <label for="password">Confirm Password</label>
+                        <input type="password" class="form-control" name="confirmPassword" placeholder="Enter confirm password" required>
+                    </div>
+                    <center>
+                        <button type="submit" class="btn submit"><a href="signup.php">Submit</a></button>       <br><br>
+                        <a href="index.html">Already have an account?</a>
+                    </center>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
